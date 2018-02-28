@@ -1,0 +1,159 @@
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+        <div class="navbar-fixed">
+                <nav class="z-depth-3">
+                  <div class="nav-wrapper white">
+                    <a class="brand-logo"><img class="responsive-img logo" src="images/logo_je.png"></a>
+                    <div class="container">
+                        <a materialize="sideNav" data-activates="side-nav" class="button-collapse right">
+                          <i class="material-icons cyan-text text-darken-4">menu</i>
+                        </a>
+                        <ul class="hide-on-med-and-down">
+                          <li><a href="index.html" class="background">Accueil</a></li>
+                          <li><a routerLink="/prestations" class="background">Nos prestations</a></li>
+                          <li><a href="teampres.html" class="background">Présentation de l'equipe</a></li> 
+                          <li><a routerLink="/découvrir" class="background">Nous découvrir</a></li>
+                          <li class="right"><a href="specifications.html" class="background"><strong class="light-blue-text lighten-1">Demander un devis gratuit</strong></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </nav>
+        </div>
+        <ul id="side-nav" class="side-nav">
+                <li><a><img class="responsive-img logo" src="images/logo_je.png"></a></li>
+                <li><a class="waves-effect waves-light">Accueil</a></li>
+                <li><a class="waves-effect waves-light">Nos prestations</a></li>
+                <li><a href="teampres.html" class="waves-effect waves-light">Présentation de l'equipe</a></li>
+                <li><a class="waves-effect waves-light">Nous découvrir</a></li>
+                <li><a class="waves-effect waves-light">Demander un devis gratuit</a></li>
+        </ul>
+
+
+    <div class="container">
+        <div class="row">
+          <form class="col l5 offset-l3 devisform hide-on-small-only" action="php/email.php" method="post" enctype="text/plain">
+              <a class="col s12">*&nbsp;&nbsp;&nbsp;champs obligatoires</a>
+            <div class="row z-depth-4">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="firstName" id="icon_prefix" type="text" class="validate" required>
+                <label for="icon_prefix" data-error="Nom invalide"><a>* </a>Nom</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="name" id="icon_prefix" type="text" class="validate" required>
+                <label for="icon_prefix" data-error="Prénom invalide"><a>* </a>Prénom</label>
+              </div>
+      
+      
+      
+              <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input name="email" id="email" type="email" class="validate" required>
+                  <label for="email" data-error="Email invalide"><a>* </a>Email</label>
+              </div>
+      
+      
+      
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input name="phoneNumber" id="icon_telephone" type="tel" class="validate" required>
+                    <label for="icon_telephone" data-error="Numéro de téléphone invalide"><a>* </a>Numéro de Téléphone</label>
+                  </div>
+      
+      
+      
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">business_center</i>
+                    <input name="projectName" id="icon_telephone" type="text" class="validate" required>
+                    <label for="icon_telephone" data-error="Nom du projet invalide"><a>* </a>Nom du projet</label>
+                  </div>
+      
+      
+              <div class="input-field col s12">
+                  <i class="material-icons prefix"></i>
+                <textarea name="projectDescription" id="projectTextArea" class="materialize-textarea" required></textarea>
+                <label for="projectTextArea"><a data-error="Déscription du projet invalide">* </a>Description du projet</label>
+              </div>
+              <div class="col offset-s2 s8 captcha">
+                    <div class="g-recaptcha" data-sitekey="6LdtQTsUAAAAAN3VxS9jKMECA7UC1W78SV9NcnYp"></div>
+                </div>
+                <div class="col offset-s6 s6 formbtn">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Soumettre
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+          </form>
+          <form class="col s12 devisform hide-on-med-and-up show-on-small" action="php/email.php" method="post" enctype="text/plain">
+              <a class="col s12">*&nbsp;&nbsp;&nbsp;champs obligatoires</a>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="firstName" id="icon_prefix" type="text" class="validate" required>
+                <label for="icon_prefix" data-error="Nom invalide"><a>* </a>Nom</label>
+              </div>
+              <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                <input name="name" id="icon_prefix" type="text" class="validate" required>
+                <label for="icon_prefix" data-error="Prénom invalide"><a>* </a>Prénom</label>
+              </div>
+      
+      
+      
+              <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input name="email" id="email" type="email" class="validate" required>
+                  <label for="email" data-error="Email invalide"><a>* </a>Email</label>
+              </div>
+      
+      
+      
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">phone</i>
+                    <input name="phoneNumber" id="icon_telephone" type="tel" class="validate" required>
+                    <label for="icon_telephone" data-error="Numéro de téléphone invalide"><a>* </a>Numéro de Téléphone</label>
+                  </div>
+      
+      
+      
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">business_center</i>
+                    <input name="projectName" id="icon_telephone" type="text" class="validate" required>
+                    <label for="icon_telephone" data-error="Nom du projet invalide"><a>* </a>Nom du projet</label>
+                  </div>
+      
+      
+              <div class="input-field col s12">
+                  <i class="material-icons prefix"></i>
+                <textarea name="projectDescription" id="projectTextArea" class="materialize-textarea" required></textarea>
+                <label for="projectTextArea"><a data-error="Déscription du projet invalide">* </a>Description du projet</label>
+              </div>
+              <div class="col captcha s12">
+                    <div class="g-recaptcha" data-sitekey="6LdtQTsUAAAAAN3VxS9jKMECA7UC1W78SV9NcnYp"></div>
+                </div>
+                <div class="col offset-s6 s6 formbtn">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Soumettre
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+          </form>
+        </div>
+        </div>
+</body>
+  
+  
+  
+  
+  
