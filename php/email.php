@@ -1,20 +1,21 @@
 <?php
 $errors = '';
 $myemail = 'simon.serrano@hotmail.fr';//<-----Put Your email address here.
-if(empty($_POST['firstName'])  ||
-    empty($_POST['name']) ||
+if(empty($_POST['name'])  ||
+    empty($_POST['firm']) ||
     empty($_POST['email']) ||
-    empty($_POST['phoneNumber']) ||
-    empty($_POST['projectName']) ||
-    empty($_POST['projectDescription']))
+    empty($_POST['tel']) ||
+    empty($_POST['subject']) ||
+    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
 }
-$name = $_POST['name']." ".$_POST['firstName'];
-$phone = $_POST['phoneNumber'];
+$name = $_POST['name'];
+$firm = $_POST['firm'];
+$phone = $_POST['tel'];
 $email_address = $_POST['email'];
-$subject = $_POST['projectName'];
-$message = $_POST['projectDescription'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
 $email_address))
@@ -26,8 +27,9 @@ if( empty($errors))
 {
 $to = $myemail;
 $email_subject = $subject;
-$email_body = "Nouveau message du site web : \n".
-"Nom : $name \n ".
+$email_body = "Nouveau message du site web :\n".
+"Nom : $name\n".
+"Entreprise : $firm\n".
 "Téléphone : $phone"
 "Email: $email_address\n Message \n $message";
 $headers = "From: $myemail\n";
