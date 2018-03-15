@@ -116,83 +116,8 @@ body {
 .projectFactsWrap .item i{
   vertical-align: middle;
   font-size: 50px;
-
 }
-
 
 .projectFactsWrap .item span{
   background: white;
-}
-
-@media (max-width: 786px){
-  .projectFactsWrap .item {
-     flex: 0 0 50%;
-  }
-}
-
-/* AUTHOR LINK */
-
-
-footer{
-  z-index: 100;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-footer p {
-
-  font-size: 16px;
-  opacity: 0;
-  font-family: 'Open Sans';
-  width: 100%;
-    word-wrap: break-word;
-  line-height: 25px;
-  -webkit-transform: translateX(-200px);
-  transform: translateX(-200px);
-  margin: 0;
-  -webkit-transition: all 250ms ease;
-  -moz-transition: all 250ms ease;
-  transition: all 250ms ease;
-}
-
-footer .authorWindow a{
-  color: white;
-  text-decoration: none;
-}
-
-footer p strong {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.about-me-img {
-  width: 120px;
-  height: 120px;
-  left: 10px;
-  /* bottom: 30px; */
-  position: relative;
-  border-radius: 100px;
-}
-
-
-.about-me-img img {
-}
-
-
-.authorWindow{
-  width: 600px;
-  background: #75439a;
-  padding: 22px 20px 22px 20px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.authorWindowWrapper{
-  display: none;
-  left: 110px;
-  top: 0;
-  padding-left: 25px;
-  position: absolute;
 }
