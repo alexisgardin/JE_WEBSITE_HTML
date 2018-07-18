@@ -6,14 +6,25 @@ body, html {
     color: #37474F;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
   }
   h1,
   h2,
   h3 {
     font-weight: 200;
   }
-
+  .logoPartenaire{
+    max-width: 140px!important;
+  }
+  .filiere{
+    color: #263238!important;
+  }
+  .filiere:hover{
+    color: #37474f!important;
+  }
+  .indicator{
+    background-color: #263238!important;
+  }
   .content h1, .content h2 {
     font: 400 37px "PT Sans Narrow", Arial, sans-serif!important;
     margin: 10px 0 10px;
@@ -27,7 +38,7 @@ body, html {
   }
 
   .content p{
-    font: 400 16px "PT Sans Narrow", Arial, sans-serif!important;
+    font: 400 18px "PT Sans Narrow", Arial, sans-serif!important;
     margin: 10px 0 10px;
     text-align: center;
   }
@@ -57,7 +68,7 @@ body, html {
   padding-top: 72vh;
   }
   .prespic{
-  width: 100%;
+  width: 120%;
   height: 100%;
   }
   .president{
