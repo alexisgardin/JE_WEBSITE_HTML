@@ -31,7 +31,20 @@ body, html {
     text-transform: uppercase;
     text-align: center;
   }
-
+  .mc-description{
+    font-size:16px;
+  }
+  /*C'est la !!!!!!!!!!*/
+  .imgAncien{
+    width:100px!important;
+    height: 165px;
+    object-fit: cover;
+  }
+  .membresActuel{
+    width:326px!important;
+    height: 372px!important;
+    object-fit: cover;
+  }
   .services-block {
     background: #f6f6f6;
     padding: 60px 0 70px;
