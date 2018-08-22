@@ -41,8 +41,6 @@ h1, h2, h3 {
   font-size: 16px;
 }
 
-/*C'est la !!!!!!!!!!*/
-
 .imgAncien {
   width: 100px !important;
   height: 165px;
@@ -51,7 +49,7 @@ h1, h2, h3 {
 
 .membresActuel {
   width: 326px !important;
-  height: 372px !important;
+  max-height: 372px!important;
   object-fit: cover;
 }
 
